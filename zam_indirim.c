@@ -1,5 +1,7 @@
 #include <stdio.h>
 // klavyeden girilen harfe göre zam veya indirim hesaplayıp ürünün yeni fiyatını hesaplar
+// i ve I indirimi temsil eder
+// z ve Z zamı temsil eder
 
 int main() 
 
@@ -17,7 +19,7 @@ int main()
  
   if(secim == 'i' || secim == 'I')
   {
-    printf("%% kac indirim yapacaksiniz?: "); // %% bir tane % yazdırılmasını sağlar
+    printf("%% kac indirim yapacaksiniz?: "); // printf içinde %% bir tane % yazdırılmasını sağlar
     scanf("%lf",&indirim); 
     
     if(indirim > 0 && indirim <= 100)
